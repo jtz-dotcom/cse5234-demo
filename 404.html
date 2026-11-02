@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open the Nordform demo</title>
+    <script>
+      const base = "/cse5234-demo/";
+      const path = window.location.pathname;
+      const route = path.startsWith(base) ? path.slice(base.length) : "";
+      window.location.replace(base + "#/" + route + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body><p>Opening the educational demo. <a href="/cse5234-demo/">Continue to Nordform</a>.</p></body>
+</html>
